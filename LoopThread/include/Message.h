@@ -17,6 +17,16 @@ public:
 
     Message():next(nullptr){};
     Message(Handler* handler):mHandler(handler), next(nullptr) {};
+
+    /* maybe use default is OK
+    Message(const Message& other){
+
+    };
+
+    Message& operator =(const Message& other){
+
+    };
+    */
 };
 
 #endif //LOOPTHREAD_MESSAGE_H
